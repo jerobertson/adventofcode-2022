@@ -1,7 +1,6 @@
 from pathlib import Path
 
 def strategy_score(lines):
-    # rock 1 paper 2 scissors 3
     combinations = {
         "AX": 3,
         "AY": 4,
@@ -19,6 +18,7 @@ def strategy_score(lines):
         sum += combinations[l[0] + l[2]]
 
     print(sum)
+
 
 def rps_score(lines):
     combinations = {
