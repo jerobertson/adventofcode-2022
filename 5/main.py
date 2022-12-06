@@ -36,7 +36,7 @@ def read_input(file):
                 if lines[h][w+1] != " ":
                     towers[int(w/4)].append(lines[h][w+1])
 
-        moves = [re.findall(r"\d+",l) for l in lines[-len(lines)+10:]]
+        moves = [re.findall(r"\d+",l) for l in lines[-len(lines)+tower_height+2:]]
 
         return towers, moves
 
